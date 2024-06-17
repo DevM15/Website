@@ -95,7 +95,6 @@ option{
 #footer{
     height: 70px;
     /* width: 100%; */
-    width: 1360px;
     display: flex;
     justify-content: space-around;
     align-items: center;
