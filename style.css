@@ -2,21 +2,18 @@ body{
     margin: 0px;
     background-color: rgb(44, 51, 84);
     font-family: sans-serif;
-    width: 100%;
 }
 
 #navbar{
-    width: 100%;
-    height: 100;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 30px 150px 30px 150px;
 }
 
 #logo{
     height: 50px;
     font-size: xx-large;
-    padding: 20px 0px 10px 0px;
     color: #ff4a09;
     display: flex;
     justify-items: center;
@@ -39,7 +36,7 @@ body{
 #hero{
     padding: 30px 150px 30px 150px;
     font-size: 50px;
-    
+    display: flex;
     justify-content: space-between;
 }
 
@@ -110,7 +107,7 @@ option{
     justify-content: space-between;
     align-items: center;
     background-color: #efefe3;
-    
+    display: flex;
 }
 
 #yeezy-left{
@@ -118,7 +115,6 @@ option{
     text-align: justify;
     display: grid;
     align-content: center;
-    padding-right: 250px;
 }
 
 #yeezy-left h1{
@@ -142,7 +138,7 @@ option{
     text-align: center;
 }
 
-#shopnowbutto n{
+#shopnow button{
     color: white;
     font-weight: 700;
     background-color: black;
@@ -164,17 +160,18 @@ option{
 #populartext{
     height: fit-content; 
     width: 80vmax;
+    font-size: 60px;
     display: flex;
     justify-content: space-between; 
     text-align: left; 
 }
+
 #collection{
     background-color: white;
     padding: 150px ;
-    width: 1360px;
 }
-
-/* For mobile phones: */
+/* 
+For mobile phones:
 [class*="col-"] {
     width: 100%;
     
@@ -187,16 +184,14 @@ option{
 }
 [id*=yeezy]{
     display: grid;
-    width: 100%;
 }
 [id*="populartext"]{
     font-size: 30px;
 }
 [id*="collection"]{
-    width: 100%;
 }
-  @media only screen and (max-width: 768px) {
-    /* For desktop: */
+  @media only screen and (min-width: 768px) {
+    For desktop:
     #rightnav {display: block;}
     #hero{display: flex;}
     #yeezy{display: flex;}
@@ -207,4 +202,4 @@ option{
     #collection{width: 100%;}
     #yeezy{width: 100%;}
 
-}   
+}    */
