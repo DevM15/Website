@@ -1,0 +1,222 @@
+body{
+    margin: 0px;
+    background-color: rgb(44, 51, 84);
+    font-family: sans-serif;
+    width: 768px;
+}
+
+#navbar{
+    width: 100%;
+    height: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo{
+    height: 50px;
+    font-size: xx-large;
+    padding: 20px 0px 10px 0px;
+    color: #ff4a09;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#rightnav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+
+#rightnav i{
+    color: white;
+    font-size: 1.7rem;
+    margin: 0 20px;
+}
+
+#hero{
+    padding: 30px 150px 30px 150px;
+    font-size: 50px;
+    
+    justify-content: space-between;
+}
+
+#hero-left{
+    height: 500px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-left-top{
+    display: grid;
+    color: white;
+    align-items: center;
+}
+
+#star{
+    color: #ff4a09;
+    font-size: 1.3rem;
+    margin: -5px 0 20px 0;
+}
+
+#size{
+    height: 30px;
+    width: 50px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+option{
+    color: black;
+}
+
+.size-card{
+    border: 3px solid #5e6c9c;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+#add{
+    width: 50%;
+    height: 6vh; 
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 3px solid #ff4a09;
+    background-color: transparent;
+    color: #ff4a09;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+
+#footer{
+    height: 70px;
+    /* width: 100%; */
+    width: 1360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+#yeezy{
+    padding: 30px 150px 30px 150px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefe3;
+    
+}
+
+#yeezy-left{
+    width: 400px;
+    text-align: justify;
+    display: grid;
+    align-content: center;
+    padding-right: 250px;
+}
+
+#yeezy-left h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#yeezy-right{
+    height: 400px;
+    width: 400px;
+    background-image: url(image/yzy-foam-rnr-adults.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#shopnow{
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#shopnowbutto n{
+    color: white;
+    font-weight: 700;
+    background-color: black;
+    height: 100%;width: 100%;
+    position: relative;
+    bottom: 2px;
+    right: 3px;
+}
+
+#popular{
+    padding-top: 70px;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    font-size: x-large;
+}
+
+#populartext{
+    height: fit-content; 
+    width: 80vmax;
+    display: flex;
+    justify-content: space-between; 
+    text-align: left; 
+}
+#collection{
+    background-color: white;
+    padding: 150px ;
+    width: 1360px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    
+  }
+ [id*="rightnav"] {
+    display: none;
+ }
+[id*="hero"]{
+    display: grid;
+}
+[id*=yeezy]{
+    display: grid;
+    width: 100%;
+}
+[id*="populartext"]{
+    font-size: 30px;
+}
+[id*="collection"]{
+    width: 100%;
+}
+  @media only screen and (max-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    #rightnav {display: block;}
+    #hero{display: flex;}
+    #yeezy{display: flex;}
+    #populartext{font-size: 60px;}
+  }
+
+@media only screen and (max-width: 768px){
+    #collection{width: 100%;}
+    #yeezy{width: 100%;}
+
+}   
