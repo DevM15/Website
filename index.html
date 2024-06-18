@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="navbar">
-        <span id="logo"><a href="file:///D:/Dev/VS%20code%20project/Websites/Shoes/index.html">NIKE</a></span>
+        <span id="logo"><a href="index.html">NIKE</a></span>
         <div id="rightnav">
             <a href="Newreleases">NEW RELEASES</a>
             <a href="MEN">MEN</a>
@@ -18,6 +18,16 @@
             <a href="COLLECTIONS">COLLECTIONS</a>
             <i class="fa-brands fa-shopify" ></i>
         </div>  
+        <div class="topnav">
+            <div id="myLinks">
+              <a href="#Men">Men</a>
+              <a href="#Women">Women</a>
+              <a href="#about">Collection</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
     </div>
     <div id="hero">
         <div id="hero-left">
@@ -39,7 +49,7 @@
               </select></div>
             <div id="add">Add To Card</div>
         </div>
-        <div style="height: 500px;width: 600px; background-image: url(image/photo-1600185365926-3a2ce3cdb9eb.avif); background-size: 500px; background-repeat: no-repeat;background-size: cover;"></div>
+        <div style="height: 450px;width: 500px; background-image: url(image/photo-1600185365926-3a2ce3cdb9eb.avif); background-size: 500px; background-repeat: no-repeat;background-size: cover;"></div>
     </div> 
     <div id="yeezy">
         <div id="yeezy-left">
@@ -49,7 +59,7 @@
         </div>
         <div id="yeezy-right"></div>
     </div>
-    <div style="padding: 50px 150px 50px 150px;color: white;display:none;">
+    <div style="padding: 50px 150px 50px 150px;color: white;">
         <h2>POPULAR RIGHT NOW</h2>
         <div id="popular">
             <div id="populartext">
@@ -65,14 +75,15 @@
         </div>
     </div>
     <div id="collection">
-        <h1>VELOCITY NITRO™ 3</h1>
-        <h3 style="font-weight:200;">THE WAY RUNNING SHOULD FEEL</h3>
-        <div style="width: 350px; display: flex;justify-content: space-between;">
-            <button style="background-color: black; color: white; width: 100px;height: 50px;cursor: pointer;">SHOP NOW</button>
-            <button style="background-color: black; color: white; width: 200px;height: 50px;cursor: pointer;">SHOP NITRO COLLECTION</button>
+        <div>
+            <h1>VELOCITY NITRO™ 3</h1>
+            <h3 style="font-weight:200;">THE WAY RUNNING SHOULD FEEL</h3>
+            <div style="width: 350px; display: flex;justify-content: space-between;">
+                <button style="background-color: black; color: white; width: 100px;height: 50px;cursor: pointer;">SHOP NOW</button>
+                <button style="background-color: black; color: white; width: 200px;height: 50px;cursor: pointer;">SHOP NITRO COLLECTION</button>
+            </div>
         </div>
-        <img src="image/Velocity-NITRO™-3-Men's-Running-Shoes.avif" style="margin: 100px 100px 0px 0px; ">
-        <img src="image/Velocity-NITRO™-3-Psychedelic-Rush-Men's-Running-Shoes.avif" >
+        <div><img src="image/Velocity-NITRO™-3-Psychedelic-Rush-Men's-Running-Shoes.avif" class="nitroimg" ></div>
     </div>
     <div id="footer">
             <div>All rights reserved</div>
@@ -82,5 +93,15 @@
                 <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
 </body>
 </html>
