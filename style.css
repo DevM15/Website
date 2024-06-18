@@ -173,7 +173,7 @@ option{
 #populartext{
     height: fit-content; 
     width: 80vmax;
-    font-size: 60px;
+/*     font-size: 60px; */
     display: flex;
     justify-content: space-between; 
     text-align: left; 
@@ -187,7 +187,7 @@ option{
 @media only screen and (min-width:768px) {
     #hero{display: flex;flex-wrap: wrap;}
     #yeezy{display: flex;flex-wrap: wrap;}
-    /* #populartext{font-size: 30px;} */
+    #populartext{font-size: 60px;}
 }
 
 a {
