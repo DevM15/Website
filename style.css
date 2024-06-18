@@ -172,10 +172,18 @@ option{
 #populartext{
     height: fit-content; 
     width: 80vmax;
-/*     font-size: 60px; */
+    /* font-size: 60px; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; 
     text-align: left; 
+}
+
+.poptext{
+    border-bottom: 0.1px solid white;
+    margin: 0;
+    /* width: 25%; */
+    cursor: pointer;
 }
 
 #collection{
