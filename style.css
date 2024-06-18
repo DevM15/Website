@@ -11,10 +11,11 @@ body{
     padding: 30px 150px 30px 150px;
 }
 
-#logo{
+#logo{ 
+    color: #ff4a09;
+    text-decoration: none;
     height: 50px;
     font-size: xx-large;
-    color: #ff4a09;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -36,7 +37,7 @@ body{
 #hero{
     padding: 30px 150px 30px 150px;
     font-size: 50px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 }
 
@@ -90,6 +91,12 @@ option{
     display: flex;
     align-items: center ;
     justify-content: center;
+    cursor: pointer;
+}
+
+#add:hover{
+    background-color: #ff4a09;
+    color: black;
 }
 
 #footer{
@@ -106,7 +113,7 @@ option{
     justify-content: space-between;
     align-items: center;
     background-color: #efefe3;
-    display: flex;
+    /* display: flex; */
 }
 
 #yeezy-left{
@@ -135,6 +142,12 @@ option{
     background-color: transparent;
     border: 1px solid black;
     text-align: center;
+    
+}
+
+#shopnow button:hover{
+    bottom:0px;
+    right:0px;
 }
 
 #shopnow button{
@@ -145,6 +158,7 @@ option{
     position: relative;
     bottom: 2px;
     right: 3px;
+    cursor: pointer;
 }
 
 #popular{
@@ -159,7 +173,7 @@ option{
 #populartext{
     height: fit-content; 
     width: 80vmax;
-    font-size: 60px;
+    /* font-size: 60px; */
     display: flex;
     justify-content: space-between; 
     text-align: left; 
@@ -169,6 +183,15 @@ option{
     background-color: white;
     padding: 150px ;
 }
+
+@media only screen and (min-width:768px) {
+    #hero{display: flex;}
+    #yeezy{display: flex;}
+    #populartext{font-size: 60px;}
+}
+
+
+
 /* 
 For mobile phones:
 [class*="col-"] {
