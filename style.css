@@ -212,8 +212,8 @@ option{
 }
 
 @media only screen and (min-width:768px) {
-    #hero{display: flex;flex-wrap: wrap;}
-    #yeezy{display: flex;flex-wrap: wrap;}
+    #hero{display: flex;flex-wrap: wrap;justify-content:center;}
+    #yeezy{display: flex;flex-wrap: wrap;justify-content:center;}
     #populartext{font-size: 60px;}
     #collection{display: flex;flex-wrap: wrap;}
     .topnav{display: none;}
