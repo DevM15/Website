@@ -146,6 +146,7 @@ option{
     background-image: url(image/yzy-foam-rnr-adults.png);
     background-repeat: no-repeat;
     background-size:cover;
+    margin: 100px 0 100px 0;
 }
 
 #shopnow{
@@ -209,11 +210,12 @@ option{
     margin-left: 30px;
     height: 400px;
     width: 400px;
+    margin: 100px 0 100px 0;
 }
 
 @media only screen and (min-width:768px) {
-    #hero{display: flex;flex-wrap: wrap;justify-content:center;}
-    #yeezy{display: flex;flex-wrap: wrap;justify-content:center;}
+    #hero{display: flex;flex-wrap: wrap;justify-content: center;}
+    #yeezy{display: flex;flex-wrap: wrap;justify-content: center;}
     #populartext{font-size: 60px;}
     #collection{display: flex;flex-wrap: wrap;}
     .topnav{display: none;}
