@@ -177,7 +177,7 @@ option{
 #popular{
     padding-top: 70px;
     height: 500px;
-    display: grid;
+    display: none;
     justify-content: space-between;
     font-size: x-large;
 }
