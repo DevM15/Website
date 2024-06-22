@@ -45,7 +45,8 @@ body{
 #hero{
     padding: 30px 150px 30px 150px;
     font-size: 50px;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -125,7 +126,8 @@ option{
     justify-content: space-between;
     align-items: center;
     background-color: #efefe3;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
 }
 
 #yeezy-left{
@@ -204,6 +206,8 @@ option{
     padding: 150px ;
     align-items: center;
     justify-content: space-around;
+    display: flex;
+    flex-direction: column;
 }
 
 .nitroimg{
@@ -214,10 +218,10 @@ option{
 }
 
 @media (min-width:1536px) {
-    #hero{display: flex;flex-wrap: wrap;justify-content: center;}
-    #yeezy{display: flex;flex-wrap: wrap;justify-content: center;}
+    #hero{flex-direction: row; flex-wrap: wrap;justify-content: center;}
+    #yeezy{flex-direction: row;flex-wrap: wrap;justify-content: center;}
     #populartext{font-size: 60px;}
-    #collection{display: flex;flex-wrap: wrap;}
+    #collection{flex-direction: row;flex-wrap: wrap;}
     .topnav{display: none;}
     #rightnav{display: block;}
 }
