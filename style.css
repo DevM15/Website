@@ -177,7 +177,7 @@ option{
 #popular{
     padding-top: 70px;
     height: 500px;
-    display: none;
+    display: grid;
     justify-content: space-between;
     font-size: x-large;
 }
@@ -186,7 +186,7 @@ option{
     height: fit-content; 
     width: 80vmax;
     /* font-size: 60px; */
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
     text-align: left; 
@@ -213,7 +213,7 @@ option{
     margin: 100px 0 100px 0;
 }
 
-@media only screen and (min-width:768px) {
+@media (min-width:1536px) {
     #hero{display: flex;flex-wrap: wrap;justify-content: center;}
     #yeezy{display: flex;flex-wrap: wrap;justify-content: center;}
     #populartext{font-size: 60px;}
