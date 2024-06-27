@@ -86,7 +86,7 @@ body{
     height: fit-content;
     width: fit-content;
     /* font-size: 20px; */
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: transparent;
     color: white;
     text-align: center;
@@ -304,6 +304,7 @@ a {
     #rightnav{display: none; font-size: 30px;}
     .topnav{display: block;}
     #hero{flex-direction: row;flex-wrap: wrap;height: fit-content;justify-content: space-around;}
+    #hero-left{margin-left: 20px;}
     #hero-left-1{height: fit-content;font-size: 40px;}
     #star{font-size: 30px;}
     #hero-left p{font-size: 15px;}
@@ -311,7 +312,7 @@ a {
     #size{font-size: 32px;}
     #size option {font-size: 12px;}
     #add{height: 95px;font-size: 30px;}
-    #hero-photo{height: 500px;width: 500px;}
+    #hero-photo{height: 500px;width: 500px;margin-left: 20px;}
     #yeezy{flex-direction: row;flex-wrap: wrap;}
     #yeezy-left h1{font-size: 60px;}
     #yeezy-left p{font-size: 15px;}
