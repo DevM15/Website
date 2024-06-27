@@ -91,6 +91,7 @@ body{
     color: white;
     text-align: center;
 }
+
 option{
     color: black;
 }
@@ -308,6 +309,7 @@ a {
     #hero-left p{font-size: 15px;}
     #size-text a{font-size: 40px;}
     #size{font-size: 32px;}
+    #size option {font-size: 12px;}
     #add{height: 95px;font-size: 30px;}
     #hero-photo{height: 500px;width: 500px;}
     #yeezy{flex-direction: row;flex-wrap: wrap;}
@@ -336,6 +338,7 @@ a {
     #hero-left p{font-size: 27px;}
     #size-text a{font-size: 50px;}
     #size{font-size: 40px;}
+    #size option {font-size: 12px;}
     #add{height: 110px;font-size: 40px;}
     #hero-photo{height: 600px;width: 600px;}
     #yeezy{flex-direction: row;flex-wrap: wrap;}
@@ -365,6 +368,7 @@ a {
     #hero-left p{font-size: 27px;}
     #size-text a{font-size: 60px;}
     #size{font-size: 45px;}
+    #size option {font-size: 22px;}
     #add{height: 110px;font-size: 50px;}
     #hero-photo{height: 1000px;width: 1000px;}
     #yeezy{flex-direction: row;flex-wrap: wrap;}
