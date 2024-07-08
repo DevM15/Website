@@ -4,33 +4,43 @@
 	font-family: sans-serif;
 }
 
-body{
-	background-image: url(images/university-of-sydney.webp);
-	background-repeat: no-repeat;
-	background-size: contain;
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(images/university-of-sydney.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
 
 .nav{
-	height: 80px;
+	padding: 2% 6%;
 	background-color: transparent;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.logo{
+.nav .fa-solid{
+	display: none;
+	text-align: left;
+}
+
+.logo>a{
 	font-size: 24px;
-	padding-left: 100px;
 	color: white;
+	text-decoration: none;
 }
 
 .nav-btn{
-	padding-right: 100px;
+	flex: 1;
+	text-align: right;
 }
 
-.nav-btn>ul{
-	gap: 30px;
-	display: flex;
+.nav-btn>ul>li{
+	padding: 8px 12px;
+	display: inline-block;
 	list-style: none;
 }
 
@@ -40,10 +50,24 @@ body{
 	text-decoration: none;
 }
 
+.nav-btn>ul>li::after{
+	content: '';
+	height: 2px;
+	width: 0%;
+	background-color: #f44336;
+	margin: auto;
+	display: block;
+	transition: 500ms;
+}
+
+.nav-btn>ul>li:hover::after{
+	width: 100%;
+}
+
 .hero-card{ 
-	margin: 23vh auto ;
+	margin: 10% auto ;
 	padding: 10px;
-	width: 50vw; 
+	width: 50%; 
 	box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
 	height: 300px; 
 	border-radius: 10px; 
@@ -61,9 +85,8 @@ body{
 	font-size: 50px;
 }
 
-.hero-card>h3{
-	width: 500px;
-	font-size: 15px;
+.hero-card>p{
+	font-size: 14px;
 	font-weight: 100;
 }
 
@@ -75,32 +98,44 @@ body{
 	background-color: transparent;
 	color: white;
 	border: solid 2px white;
+	cursor: pointer;
+}
+
+.hero-card>button:hover{
+	border: 2px solid #f44336;
+	background-color: #f44336;
+	transition: 1s;
 }
 
 .offer{
-	padding: 100px;
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
 	text-align: center;
-	background-color: white;
 }
 
 .offer-text>p{
 	margin-top: 10px;
 	font-size: 12px;
-
 }
 
 .offer-card{
-	margin: 100px 0;
+	margin-top: 5%;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 }
 
 .oc{
-	height: fit-content;
-	width: 300px;
-	padding: 50px 30px;
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
 	background-color: lightpink;
+	box-sizing: border-box;
+}
+
+.oc>h3{
+	margin: 10px 0;
 }
 
 .oc>p{
@@ -110,7 +145,9 @@ body{
 }
 
 .campus{
-	padding: 0 100px;
+	width: 80%;
+	margin: auto;
+	padding-top: 50px;
 	text-align: center;
 }
 
@@ -120,33 +157,45 @@ body{
 }
 
 .campus-card{
-	margin: 100px 0;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .cc{
-	height: 300px;
-	width: 400px;
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
 }
 
-.cc1{
-	background-image: url(images/architecture-of-a-modern-building.webp);
-	background-repeat: no-repeat;
-	background-size: cover;
+.layer{
+	height: 50%;
+	width: 100%;
+	padding-top: 10%;
+	position: absolute;
+	background: transparent;
+	bottom: 0;
+	left: 0;
+	transition: 1s;
 }
 
-.cc2{
-	background-image: url(images/360_F_238456158_p3m4uGTf05W4d78wORQdbeUo9jkTEcEt.webp);
-	background-repeat: no-repeat;
-	background-size: cover;
+.layer:hover{
+	background-color: rgba(238, 146, 146, 0.5);
 }
 
-.cc3{
-	background-image: url(images/360_F_71742923_SxOK3IzhX1Vv09O70REwisyWnNFfJZMb.webp);
-	background-repeat: no-repeat;
-	background-size: cover;
+.layer>h3{
+	width: 100%;
+	bottom:0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.layer:hover h3{
+	bottom:49%;
+	opacity: 1;
 }
 
 .facility{
@@ -164,4 +213,39 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.fc>img{
+	height: 300px;
+	width: 400px;
+}
+
+@media(max-width:700px){
+	.hero-card>h1{
+		font-size: 20px;
+	}
+	.nav-btn>ul>li{
+		display: block;
+		text-align: left;
+	}
+	.nav-btn{
+		width: 200px;
+		height: 100vh;
+		position: absolute;
+		background: #f44336;
+		right: -220px;
+		top: 0;
+		z-index: 2;
+		transition: 1s;
+	}
+	.nav .fa-solid{
+		font-size: 22px;
+		margin: 10px;
+		color: #fff;
+		display: block;
+		cursor: pointer;
+	}
+	.offer-card{
+		flex-direction: column;
+	}
 }

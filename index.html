@@ -5,27 +5,31 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Document</title>
 </head>
-
 <body>
-	<div class="nav">
-		<div class="logo">University</div>
-		<div class="nav-btn">
-			<ul>
-				<li><a href="">HOME</a></li>
-				<li><a href="">ABOUT</a></li>
-				<li><a href="">COURSE</a></li>
-				<li><a href="">BLOG</a></li>
-				<li><a href="">CONTACT</a></li>
-			</ul>
+	<section class="header">
+		<div class="nav">
+			<div class="logo"><a href="index.html">University</a></div>
+			<div class="nav-btn" id="nav-btn">
+				<i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">COURSE</a></li>
+					<li><a href="">BLOG</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa-solid fa-bars" onclick="showmenu()"></i>
 		</div>
-	</div>
-	<div class="hero-card">
-		<h1>World's Biggest University</h1>
-		<h3>Making website is one of the easiest thing in the world. You just need to learn HTML,CSS,Javascript and you are good to go </h3>
-		<button>Visit Us to Know More</button>
-	</div>
+		<div class="hero-card">
+			<h1>World's Biggest University</h1>
+			<p>Making website is one of the easiest thing in the world. You just need to learn HTML,CSS,Javascript and you are good to go </p>
+			<button>Visit Us to Know More</button>
+		</div>
+	</section>
 	<div class="offer">
 		<div class="offer-text">
 			<h1>Course We Offer</h1>
@@ -52,34 +56,57 @@
 			<p>Lorem ipsum dolor, sitit. Vero at exercitationem obcaecati sit nostrum provident deserunt </p>
 		</div>
 		<div class="campus-card">
-			<div class="cc1 cc"></div>
-			<div class="cc2 cc"></div>
-			<div class="cc3 cc"></div>
+			<div class="cc">
+				<img src="images/architecture-of-a-modern-building.jpg">
+				<div class="layer">
+					<h3>LONDON</h3>
+				</div>
+			</div>
+			<div class="cc">
+				<img src="images/360_F_238456158_p3m4uGTf05W4d78wORQdbeUo9jkTEcEt - Copy.jpg">
+				<div class="layer">
+					<h3>New York</h3>
+				</div>
+			</div>
+			<div class="cc">
+				<img src="images/360_F_71742923_SxOK3IzhX1Vv09O70REwisyWnNFfJZMb.jpg">
+				<div class="layer">
+					<h3>Washington</h3>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="facility">
+	<!-- <div class="facility">
 		<div class="campus-text">
 			<h1>Our facilites</h1>
 			<p>Lorem ipsum dolor, sitit. Vero at exercitationem obcaecati sit nostrum provident deserunt </p>
 		</div>
 		<div class="fac-card">
 			<div class="fc">
-				<img src="images/library-reading-room.webp" alt="">
+				<img src="images/library-reading-room.jpg" alt="">
 				<h3>Library</h3>
 				<p>Lorem ipsum dolor, sitit. Vero at exercitationem obcaecati sit nostrum provident deserunt </p>
 			</div>
 			<div class="fc">
-				<img src="images/kids-playground.webp" alt="">
+				<img src="images/kids-playground.jpg" alt="">
 				<h3>Playground</h3>
 				<p>Lorem ipsum dolor, sitit. Vero at exercitationem obcaecati sit nostrum provident deserunt </p>
 			</div>
 			<div class="fc">
-				<img src="images/360_F_694532009_6woyBIaoA3sRmPd2DyS1cMZjb7VAmG8B.webp" alt="">
+				<img src="images/360_F_694532009_6woyBIaoA3sRmPd2DyS1cMZjb7VAmG8B.jpg" alt="">
 				<h3>Canteen</h3>
 				<p>Lorem ipsum dolor, sitit. Vero at exercitationem obcaecati sit nostrum provident deserunt </p>
 			</div>
 		</div>
-	</div>
+	</div> -->
+<script>
+	var navbtn = document.getElementById("nav-btn")
+	function hidemenu(){
+		navbtn.style.right = "-200px"
+	}
+	function showmenu(){
+		navbtn.style.right = "0px"
+	}
+</script>
 </body>
-
 </html>
