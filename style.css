@@ -286,14 +286,12 @@
 .cta{
 	margin: 100px auto;
 	width: 80%; 
-	background: black;
 	border-radius: 10px;
 	text-align: center;
 	padding: 100px 0;
 }
 
 .cta>h1{
-	color: #fff;
 	margin-bottom:40px ;
 	padding: 0;
 }
@@ -302,9 +300,9 @@
 	padding: 10px;
 	font-size: 15px;
 	font-weight: 400;
+	color: black;
 	background-color: transparent;
-	color: white;
-	border: solid 2px white;
+	border: solid 2px black;
 	cursor: pointer;
 	text-decoration: none;
 }
