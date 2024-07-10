@@ -335,6 +335,10 @@
 	padding: 18px 0;
 }
 
+.icons>i:hover{
+	color: black;
+}
+
 .last{
 	color: #f44336;
 }
@@ -392,6 +396,9 @@
 	.b-top{
 		flex-direction: column;
 	}
+	.c-cta{
+		flex-direction:column;
+	}
 }
 
 /* header1 */
@@ -419,10 +426,6 @@
 	padding: 10%;
 	display: flex;
 	align-items: center;
-}
-
-.a-ctr>div>h1{
-	font-size: 30px;
 }
 
 .a-ctr>div>p{
@@ -505,11 +508,12 @@
 .b-ctr>h1{
 	margin-bottom: 20px;
 	margin-top: 10%;
+	text-align:center;
 }
 
 .b-cta{
-	width: 40%;
-	margin-left: 10%;
+	width: 80%;
+    margin: auto;
 	padding: 5%;
 	border: 2px  solid grey;
 }
@@ -544,4 +548,45 @@
 
 .b-cta>button:hover{
 	background-color: #f44336;
+}
+
+.c-cta{
+	display:flex;
+	justify-content:space-between;
+	margin: 10%;
+}
+
+.c-card{
+	display: flex;
+	margin-top:30px;
+	align-items: center;
+}
+
+.c-card>i{
+	font-size: 30px;
+	margin: 30px;
+	color:#f44336;
+}
+
+.c-btn{
+	margin: 30px;
+}
+
+.c-btn>input{
+	width: 100%;
+    margin: 10px;
+    height: 40px;
+	padding-left:10px;
+}
+
+.c-btn>button{
+	margin: 10px;
+    background: none;
+    color: #f44336;
+    border-color: #F33446;
+    padding: 10px;
+}
+
+#message{
+	height: 100px;
 }
