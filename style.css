@@ -396,6 +396,9 @@
 	.b-top{
 		flex-direction: column;
 	}
+	.b-h{
+		font-size: 22px;
+	}
 	.c-cta{
 		flex-direction:column;
 	}
@@ -416,6 +419,7 @@
 
 .header1>h1{
 	color: white;
+	text-align: center;
 	position: absolute;
 	left: 50%;
 	top: 50%;
